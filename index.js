@@ -15,7 +15,7 @@ async function connectDb(){
 
 async function main(){
     await connectDb();
-    app.listen(process.env.PORT || 8080, () => {
+    app.listen(process.env.PORT || 80, () => {
         console.log(`API Server started on ${process.env.PORT || 8080}`);
     });
 }
