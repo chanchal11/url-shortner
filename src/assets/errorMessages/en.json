@@ -1,0 +1,7 @@
+{
+    "SHORTCODE_NOT_FOUND": { "httpCode": 404, "message": "shortcode not found" },
+    "INVALID_SHORTCODE": { "httpCode": 400, "message": "invalid shortcode" },
+    "INVALID_URL": { "httpCode": 400, "message": "invalid url" },
+    "SHORTCODE_ALREADY_EXISTS": { "httpCode": 409, "message": "shortcode already exists"},
+    "UNKNOWN_ERROR": {"httpCode": 500, "message": "Unknown Server-Side error occured"}
+}

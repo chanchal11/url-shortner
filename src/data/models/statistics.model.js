@@ -3,15 +3,11 @@ const { DataTypes } = require('sequelize');
 module.exports = (sequelize) => {
     sequelize.define('statistic', {
         redirectCount: {
-            allowNull: true,
+            allowNull: false,
             type: DataTypes.INTEGER
         },
-        startDate: {
-            allowNull: false,
-            type: DataTypes.DATE
-        },
         lastSeenDate : {
-            allowNull: true,
+            defaultValue: Date.now(),
             type: DataTypes.DATE
         } 
     });

@@ -16,6 +16,9 @@ module.exports = (sequelize) => {
         url : {
             allowNull: false,
             type: DataTypes.STRING
+        },startDate: {
+            defaultValue: Date.now(),
+            type: DataTypes.DATE
         } 
     });
 }
