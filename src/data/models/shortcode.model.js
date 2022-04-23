@@ -10,6 +10,7 @@ module.exports = (sequelize) => {
         },
         shortcode: {
             allowNull: false,
+            unique: true,
             type: DataTypes.STRING
         },
         url : {
