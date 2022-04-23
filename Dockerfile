@@ -1,9 +1,13 @@
 FROM node:10
 
-WORKDIR /usr/src/app
+ENV NODE_ENV=production
 
-COPY package*.json ./
+WORKDIR /app
+
+COPY ["package.json", "package-lock.json*", "./"]
+
+RUN npm install --production
+
 COPY . .
 
-EXPOSE 80
-CMD [ "node","index.js" ]
+CMD [ "node", "index.js" ]
